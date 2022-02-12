@@ -1,4 +1,2 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_enc.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AEC_enc
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

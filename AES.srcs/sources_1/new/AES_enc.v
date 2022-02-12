@@ -1,12 +1,18 @@
 `timescale 1ns / 1ps
+`default_nettype none
 
 module AEC_enc(
-    input wire[127:0] key,
+    input wire[127:0] plain_text,
+    input wire[127:0] key, //hard-coded key?
     input wire reset,
-
-    output wire crypt_text
+    input wire clk,
+    output wire[127:0] crypt_text
 );
 
+//reg[127:0] key;
+reg[127:0] current;
+reg[127:0] text_reg;
+reg[3:0]  round;
 reg[7:0] SBOX[0:255];
 
 initial begin
@@ -267,5 +273,42 @@ SBOX[253]=8'h54;
 SBOX[254]=8'hbb;
 SBOX[255]=8'h16;
 end
+
+//round counter 0-to-10
+always@(posedge clk or posedge reset) begin
+    if(reset==1) begin
+        round<=4'b0000;
+    end
+    else begin
+        if(round==4'b1010) begin 
+            round<=4'b0000;
+        end else begin
+            round<=round+4'b1;
+        end
+    end
+end
+
+//register for each round output
+always@(posedge clk or posedge reset) begin
+    if(reset==1) begin
+        text_reg<=plain_text;
+    end
+    else begin
+        text_reg<=current;
+    end
+end
+
+//main function for each round
+always@(round) begin
+    current<=text_reg;
+    //round0
+    
+    //round1-round9
+    
+    //round10
+end
+
+
+assign crypt_text=text_reg;
 
 endmodule
