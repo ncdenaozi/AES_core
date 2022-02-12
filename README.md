@@ -1,6 +1,5 @@
 # AES_core
 
-github operation
 download
 ```
 git clone git@github.com:ncdenaozi/RISCV_NYU.git
