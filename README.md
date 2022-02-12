@@ -2,7 +2,7 @@
 
 download
 ```
-git clone git@github.com:ncdenaozi/RISCV_NYU.git
+git clone git@github.com:ncdenaozi/AES_core.git
 ```
 
 Synchronize
