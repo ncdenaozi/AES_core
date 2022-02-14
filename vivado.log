@@ -2,46 +2,208 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Feb 12 20:04:15 2022
-# Process ID: 63380
-# Current directory: C:/Users/AERO/Desktop/2022 spring/HW2/AES_core
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent70632 C:\Users\AERO\Desktop\2022 spring\HW2\AES_core\AES.xpr
-# Log file: C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/vivado.log
-# Journal file: C:/Users/AERO/Desktop/2022 spring/HW2/AES_core\vivado.jou
+# Start of session at: Sun Feb 13 23:34:27 2022
+# Process ID: 55524
+# Current directory: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent55320 C:\Users\Jianing\Desktop\9453HW2\lab2\AES_core\AES.xpr
+# Log file: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/vivado.log
+# Journal file: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.xpr}
+open_project C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 743.766 ; gain = 126.328
-update_compile_order -fileset sources_1
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v}}
-update_compile_order -fileset sources_1
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/sbox.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/sbox.v}}
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/sbox.v}}] -no_script -reset -force -quiet
-remove_files  {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/sbox.v}}
-file delete -force {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/sbox.v}
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/subbytes.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/subbytes.v}}
-update_compile_order -fileset sources_1
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/shiftrows.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/shiftrows.v}}
-update_compile_order -fileset sources_1
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/mix_column.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/mix_column.v}}
-update_compile_order -fileset sources_1
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v}}
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 746.055 ; gain = 129.871
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+set_property top AEC_enc [current_fileset]
+update_compile_order -fileset sources_1
+close [ open C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round.v w ]
+add_files C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round.v
+close [ open C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v w ]
+add_files C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v
+file delete -force C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v
+close [ open C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v w ]
+add_files C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close [ open C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc_top.v w ]
+add_files C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc_top.v
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v]
+set_property top AES_enc_top [current_fileset]
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc_top.v:]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'key_expansion' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj key_expansion_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot key_expansion_behav xil_defaultlib.key_expansion xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot key_expansion_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 819.660 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "key_expansion_behav -key {Behavioral:sim_1:Functional:key_expansion} -tclbatch {key_expansion.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source key_expansion.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'key_expansion_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 845.129 ; gain = 25.469
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top AES_enc_top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'AES_enc_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AES_enc_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_column
+INFO: [VRFC 10-311] analyzing module mix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/round_last.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module round_last
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrows
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_enc_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_enc_top_behav xil_defaultlib.AES_enc_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
+Compiling module xil_defaultlib.AddRoundKey
+Compiling module xil_defaultlib.round
+Compiling module xil_defaultlib.round_last
+Compiling module xil_defaultlib.AES_enc_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot AES_enc_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim/xsim.dir/AES_enc_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 14 00:26:28 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 845.766 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "AES_enc_top_behav -key {Behavioral:sim_1:Functional:AES_enc_top} -tclbatch {AES_enc_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source AES_enc_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_enc_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 845.766 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AES_enc_top/plain_text} -radix hex {00112233445566778899aabbccddeeff 0ns}
+add_force {/AES_enc_top/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Feb 12 20:53:51 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 14 00:29:19 2022...

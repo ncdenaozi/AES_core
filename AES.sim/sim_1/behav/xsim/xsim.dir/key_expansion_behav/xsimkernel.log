@@ -1,7 +1,7 @@
-Running: xsim.dir/key_expansion_behav/xsimk.exe -simmode gui -wdb key_expansion_behav.wdb -simrunnum 0 -socket 53788
+Running: xsim.dir/key_expansion_behav/xsimk.exe -simmode gui -wdb key_expansion_behav.wdb -simrunnum 0 -socket 58269
 Design successfully loaded
-Design Loading Memory Usage: 6144 KB (Peak: 6144 KB)
-Design Loading CPU Usage: 77 ms
+Design Loading Memory Usage: 6556 KB (Peak: 6556 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 7024 KB (Peak: 7024 KB)
-Simulation CPU Usage: 109 ms
+Simulation Memory Usage: 7548 KB (Peak: 7548 KB)
+Simulation CPU Usage: 46 ms
