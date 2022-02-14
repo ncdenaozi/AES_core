@@ -265,5 +265,22 @@ SBOX[253]=8'h54;
 SBOX[254]=8'hbb;
 SBOX[255]=8'h16;
 end    
+
+assign data_out[7:0]=SBOX[data_in[7:0]];
+assign data_out[15:8]=SBOX[data_in[15:8]];
+assign data_out[23:16]=SBOX[data_in[23:16]];
+assign data_out[31:24]=SBOX[data_in[31:24]];
+assign data_out[39:32]=SBOX[data_in[39:32]];
+assign data_out[47:40]=SBOX[data_in[47:40]];
+assign data_out[55:48]=SBOX[data_in[55:48]];
+assign data_out[63:56]=SBOX[data_in[63:56]];
+assign data_out[71:64]=SBOX[data_in[71:64]];
+assign data_out[79:72]=SBOX[data_in[79:72]];
+assign data_out[87:80]=SBOX[data_in[87:80]];
+assign data_out[95:88]=SBOX[data_in[95:88]];
+assign data_out[103:96]=SBOX[data_in[103:96]];
+assign data_out[111:104]=SBOX[data_in[111:104]];
+assign data_out[119:112]=SBOX[data_in[119:112]];
+assign data_out[127:120]=SBOX[data_in[127:120]];
     
 endmodule
