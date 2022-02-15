@@ -319,7 +319,6 @@ always@(*) begin
     end
 end
 
-
 assign round_key0={Word[0],Word[1],Word[2],Word[3]};
 assign round_key1={Word[4],Word[5],Word[6],Word[7]};
 assign round_key2={Word[8],Word[9],Word[10],Word[11]};
