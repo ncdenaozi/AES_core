@@ -3,12 +3,13 @@
 Dec  7 2018
 00:33:28
 C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v,1645067667,verilog,,,,AES_dec,,,,,,,,
 C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_enc.v,1644891910,verilog,,,,AEC_enc,,,,,,,,
-C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_enc_top.v,1644885783,verilog,,,,AES_enc_top,,,,,,,,
-C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v,1644885720,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v,,AddRoundKey,,,,,,,,
-C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v,1644886660,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/mix_column.v,,key_expansion,,,,,,,,
+C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v,1644885720,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_mix_column.v,,AddRoundKey,,,,,,,,
+C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_mix_column.v,1644896652,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_shiftrows.v,,inv_mix;inv_mix_column,,,,,,,,
+C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_shiftrows.v,1644896652,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_subbytes.v,,inv_shiftrows,,,,,,,,
+C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_subbytes.v,1644896652,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v,,inv_subbytes,,,,,,,,
+C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v,1644886660,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v,,key_expansion,,,,,,,,
 C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/mix_column.v,1644885720,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/shiftrows.v,,mix;mix_column,,,,,,,,
-C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/round.v,1644885720,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/round_last.v,,round,,,,,,,,
-C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/round_last.v,1644885827,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/shiftrows.v,,round_last,,,,,,,,
 C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/shiftrows.v,1644885720,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/subbytes.v,,shiftrows,,,,,,,,
 C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/subbytes.v,1644791057,verilog,,C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_enc.v,,subbytes,,,,,,,,

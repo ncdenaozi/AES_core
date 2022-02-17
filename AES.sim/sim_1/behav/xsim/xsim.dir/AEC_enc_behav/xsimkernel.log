@@ -1,7 +1,7 @@
-Running: xsim.dir/AEC_enc_behav/xsimk.exe -simmode gui -wdb AEC_enc_behav.wdb -simrunnum 0 -socket 64654
+Running: xsim.dir/AEC_enc_behav/xsimk.exe -simmode gui -wdb AEC_enc_behav.wdb -simrunnum 0 -socket 62209
 Design successfully loaded
-Design Loading Memory Usage: 6244 KB (Peak: 6244 KB)
+Design Loading Memory Usage: 6188 KB (Peak: 6188 KB)
 Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 7188 KB (Peak: 7188 KB)
-Simulation CPU Usage: 46 ms
+Simulation Memory Usage: 7100 KB (Peak: 7100 KB)
+Simulation CPU Usage: 15 ms
