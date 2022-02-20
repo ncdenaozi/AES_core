@@ -1,4 +1,4 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
 The testbench passed!
-$finish called at time : 24 ns : File "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" Line 61
+$finish called at time : 24 ns : File "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" Line 61

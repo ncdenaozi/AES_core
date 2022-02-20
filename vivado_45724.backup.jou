@@ -1,0 +1,116 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb 16 22:55:45 2022
+# Process ID: 45724
+# Current directory: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent48848 C:\Users\Jianing\Desktop\9453HW2\lab2\AES_core\AES.xpr
+# Log file: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/vivado.log
+# Journal file: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top AEC_enc [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v w ]
+add_files -fileset sim_1 C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source AES_enc.tcl
+restart
+add_force {/AES_enc/plain_text} -radix hex {00112233445566778899aabbccddeeff 0ns}
+add_force {/AES_enc/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
+add_force {/AES_enc/clk} -radix hex {0 0ns} {1 5000000ps} -repeat_every 10000000ps
+add_force {/AES_enc/reset} -radix hex {0 0ns}
+add_force {/AES_enc/reset} -radix hex {1 0ns}
+run 10 us
+run 10 us
+add_force {/AES_enc/reset} -radix hex {0 0ns}
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_AES_enc.tcl
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source AES_enc.tcl
+restart
+add_force {/AES_enc/plain_text} -radix hex {00112233445566778899aabbccddeeff 0ns}
+add_force {/AES_enc/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
+add_force {/AES_enc/reset} -radix hex {1 0ns} -cancel_after 20us
+add_force {/AES_enc/reset} -radix hex {1 0ns} -cancel_after 10us
+add_force {/AES_enc/clk} -radix hex {0 0ns} {1 5000000ps} -repeat_every 10000000ps
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_AES_enc.tcl
+close_sim
+launch_simulation
+source tb_AES_enc.tcl
+close_sim
