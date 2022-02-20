@@ -2,90 +2,68 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Feb 16 20:51:02 2022
-# Process ID: 64380
-# Current directory: C:/Users/AERO/Desktop/2022 spring/HW2/AES_core
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent66284 C:\Users\AERO\Desktop\2022 spring\HW2\AES_core\AES.xpr
-# Log file: C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/vivado.log
-# Journal file: C:/Users/AERO/Desktop/2022 spring/HW2/AES_core\vivado.jou
+# Start of session at: Wed Feb 16 22:55:45 2022
+# Process ID: 45724
+# Current directory: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent48848 C:\Users\Jianing\Desktop\9453HW2\lab2\AES_core\AES.xpr
+# Log file: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/vivado.log
+# Journal file: C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core' since last save.
+open_project C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 725.094 ; gain = 104.855
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 736.523 ; gain = 113.902
 update_compile_order -fileset sources_1
-close [ open {C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v} w ]
-add_files {{C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v}}
+set_property top AEC_enc [current_fileset]
 update_compile_order -fileset sources_1
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'AEC_enc' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AEC_enc_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AEC_enc_behav xil_defaultlib.AEC_enc xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "AEC_enc_behav -key {Behavioral:sim_1:Functional:AEC_enc} -tclbatch {AEC_enc.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2018.3
-Time resolution is 1 ps
-source AEC_enc.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'AEC_enc_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 806.152 ; gain = 18.891
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-set_property top AES_dec [current_fileset]
-update_compile_order -fileset sources_1
-set_property top AES_dec [get_filesets sim_1]
+file mkdir C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v w ]
+add_files -fileset sim_1 C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v
+update_compile_order -fileset sim_1
+set_property top tb_AES_enc [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'AES_dec' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'AES_enc' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AES_dec_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AES_dec
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AES_enc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_column
+INFO: [VRFC 10-311] analyzing module mix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrows
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_dec_behav xil_defaultlib.AES_dec xil_defaultlib.glbl -log elaborate.log 
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_enc_behav xil_defaultlib.AES_enc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -93,27 +71,32 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.key_expansion
-Compiling module xil_defaultlib.AES_dec
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
+Compiling module xil_defaultlib.AddRoundKey
+Compiling module xil_defaultlib.AES_enc
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot AES_dec_behav
+Built simulation snapshot AES_enc_behav
 
 ****** Webtalk v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
-source C:/Users/AERO/Desktop/2022 -notrace
-couldn't read file "C:/Users/AERO/Desktop/2022": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Wed Feb 16 21:19:30 2022...
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+source C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim/xsim.dir/AES_enc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 16 23:09:06 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 769.062 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "AES_dec_behav -key {Behavioral:sim_1:Functional:AES_dec} -tclbatch {AES_dec.tcl} -log {simulate.log}"
+   with args "AES_enc_behav -key {Behavioral:sim_1:Functional:AES_enc} -tclbatch {AES_enc.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-source AES_dec.tcl
+source AES_enc.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -124,51 +107,53 @@ source AES_dec.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_dec_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_enc_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 808.941 ; gain = 0.000
-add_force {/AES_dec/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-add_force {/AES_dec/reset} -radix hex {0 0ns}
-run 1000 ns
-add_force {/AES_dec/reset} -radix hex {1 0ns}
-run 1000 ns
-add_force {/AES_dec/reset} -radix hex {0 0ns}
-run 1000 ns
-run 1000 ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 808.883 ; gain = 39.820
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AES_enc/plain_text} -radix hex {00112233445566778899aabbccddeeff 0ns}
+add_force {/AES_enc/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
+add_force {/AES_enc/clk} -radix hex {0 0ns} {1 5000000ps} -repeat_every 10000000ps
+add_force {/AES_enc/reset} -radix hex {0 0ns}
+add_force {/AES_enc/reset} -radix hex {1 0ns}
+run 10 us
+run 10 us
+add_force {/AES_enc/reset} -radix hex {0 0ns}
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 836.090 ; gain = 13.582
+set_property top tb_AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'AES_dec' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_AES_enc' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AES_dec_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AddRoundKey
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_mix_column.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_mix_column
-INFO: [VRFC 10-311] analyzing module inv_mix
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_shiftrows.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_shiftrows
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_subbytes.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_subbytes
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module key_expansion
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AES_dec
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_AES_enc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_AES_enc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_dec_behav xil_defaultlib.AES_dec xil_defaultlib.glbl -log elaborate.log 
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_AES_enc_behav xil_defaultlib.tb_AES_enc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -176,23 +161,33 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
 Compiling module xil_defaultlib.AddRoundKey
-Compiling module xil_defaultlib.inv_mix
-Compiling module xil_defaultlib.inv_mix_column
-Compiling module xil_defaultlib.inv_shiftrows
-Compiling module xil_defaultlib.inv_subbytes
-Compiling module xil_defaultlib.AES_dec
+Compiling module xil_defaultlib.AES_enc
+Compiling module xil_defaultlib.tb_AES_enc
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot AES_dec_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Built simulation snapshot tb_AES_enc_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim/xsim.dir/tb_AES_enc_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 16 23:17:21 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 836.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "AES_dec_behav -key {Behavioral:sim_1:Functional:AES_dec} -tclbatch {AES_dec.tcl} -log {simulate.log}"
+   with args "tb_AES_enc_behav -key {Behavioral:sim_1:Functional:tb_AES_enc} -tclbatch {tb_AES_enc.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-source AES_dec.tcl
+source tb_AES_enc.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -203,48 +198,40 @@ source AES_dec.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_dec_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_AES_enc_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 815.492 ; gain = 4.434
-add_force {/AES_dec/key} -radix hex {69c4e0d86a7b0430d8cdb78070b4c55a 0ns}
-add_force {/AES_dec/crypt_text} -radix hex {69c4e0d86a7b0430d8cdb78070b4c55a 0ns}
-add_force {/AES_dec/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
-add_force {/AES_dec/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-add_force {/AES_dec/reset} -radix hex {1 0ns}
-run 100 ns
-add_force {/AES_dec/reset} -radix hex {0 0ns}
-run 100 ns
-run 100 ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 836.090 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'AES_dec' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_AES_enc' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AES_dec_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_AES_enc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AddRoundKey
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_mix_column.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_mix_column
-INFO: [VRFC 10-311] analyzing module inv_mix
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_shiftrows.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_shiftrows
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_subbytes.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_subbytes
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module key_expansion
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AES_dec
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_column
+INFO: [VRFC 10-311] analyzing module mix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrows
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_AES_enc
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_dec_behav xil_defaultlib.AES_dec xil_defaultlib.glbl -log elaborate.log 
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_AES_enc_behav xil_defaultlib.tb_AES_enc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -252,84 +239,41 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
 Compiling module xil_defaultlib.AddRoundKey
-Compiling module xil_defaultlib.inv_mix
-Compiling module xil_defaultlib.inv_mix_column
-Compiling module xil_defaultlib.inv_shiftrows
-Compiling module xil_defaultlib.inv_subbytes
-Compiling module xil_defaultlib.AES_dec
+Compiling module xil_defaultlib.AES_enc
+Compiling module xil_defaultlib.tb_AES_enc
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot AES_dec_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "AES_dec_behav -key {Behavioral:sim_1:Functional:AES_dec} -tclbatch {AES_dec.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
+Built simulation snapshot tb_AES_enc_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 836.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 836.090 ; gain = 0.000
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-source AES_dec.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_dec_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 848.898 ; gain = 0.000
-add_force {/AES_dec/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
-add_force {/AES_dec/crypt_text} -radix hex {69c4e0d86a7b0430d8cdb78070b4c55a 0ns}
-add_force {/AES_dec/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-add_force {/AES_dec/reset} -radix hex {1 0ns}
-run 100 ns
-add_force {/AES_dec/reset} -radix hex {0 0ns}
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 836.090 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+set_property top AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'AES_dec' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'AES_enc' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj AES_dec_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AddRoundKey
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_mix_column.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_mix_column
-INFO: [VRFC 10-311] analyzing module inv_mix
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_shiftrows.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_shiftrows
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/inv_subbytes.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module inv_subbytes
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module key_expansion
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.srcs/sources_1/new/AES_dec.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AES_dec
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj AES_enc_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_dec_behav xil_defaultlib.AES_dec xil_defaultlib.glbl -log elaborate.log 
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot AES_enc_behav xil_defaultlib.AES_enc xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -337,23 +281,24 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.key_expansion
-Compiling module xil_defaultlib.inv_shiftrows
-Compiling module xil_defaultlib.inv_subbytes
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
 Compiling module xil_defaultlib.AddRoundKey
-Compiling module xil_defaultlib.inv_mix
-Compiling module xil_defaultlib.inv_mix_column
-Compiling module xil_defaultlib.AES_dec
+Compiling module xil_defaultlib.AES_enc
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot AES_dec_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Built simulation snapshot AES_enc_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 836.090 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/AERO/Desktop/2022 spring/HW2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "AES_dec_behav -key {Behavioral:sim_1:Functional:AES_dec} -tclbatch {AES_dec.tcl} -log {simulate.log}"
+   with args "AES_enc_behav -key {Behavioral:sim_1:Functional:AES_enc} -tclbatch {AES_enc.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-source AES_dec.tcl
+source AES_enc.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -364,27 +309,176 @@ source AES_dec.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_dec_behav' loaded.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'AES_enc_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 889.117 ; gain = 0.000
-add_force {/AES_dec/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
-add_force {/AES_dec/crypt_text} -radix hex {69c4e0d86a7b0430d8cdb78070b4c55a 0ns}
-add_force {/AES_dec/reset} -radix hex {1 0ns}
-add_force {/AES_dec/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
-run 100 ns
-add_force {/AES_dec/reset} -radix hex {0 0ns}
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
-run 100 ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 836.090 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/AES_enc/plain_text} -radix hex {00112233445566778899aabbccddeeff 0ns}
+add_force {/AES_enc/key} -radix hex {000102030405060708090a0b0c0d0e0f 0ns}
+add_force {/AES_enc/reset} -radix hex {1 0ns} -cancel_after 20us
+add_force {/AES_enc/reset} -radix hex {1 0ns} -cancel_after 10us
+add_force {/AES_enc/clk} -radix hex {0 0ns} {1 5000000ps} -repeat_every 10000000ps
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top tb_AES_enc [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_AES_enc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_AES_enc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_column
+INFO: [VRFC 10-311] analyzing module mix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrows
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_AES_enc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_AES_enc_behav xil_defaultlib.tb_AES_enc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v:54]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 54, File C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
+Compiling module xil_defaultlib.AddRoundKey
+Compiling module xil_defaultlib.AES_enc
+Compiling module xil_defaultlib.tb_AES_enc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_AES_enc_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 844.633 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_AES_enc_behav -key {Behavioral:sim_1:Functional:tb_AES_enc} -tclbatch {tb_AES_enc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Time resolution is 1 ps
+source tb_AES_enc.tcl
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 844.633 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_AES_enc' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_AES_enc_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/mix_column.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_column
+INFO: [VRFC 10-311] analyzing module mix
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/shiftrows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shiftrows
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sources_1/new/subbytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subbytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_AES_enc
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado2018/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 263ad228b72743e88f109db5ece163c6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_AES_enc_behav xil_defaultlib.tb_AES_enc xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v:58]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 58, File C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.subbytes
+Compiling module xil_defaultlib.shiftrows
+Compiling module xil_defaultlib.mix
+Compiling module xil_defaultlib.mix_column
+Compiling module xil_defaultlib.AddRoundKey
+Compiling module xil_defaultlib.AES_enc
+Compiling module xil_defaultlib.tb_AES_enc
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_AES_enc_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 844.633 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_AES_enc_behav -key {Behavioral:sim_1:Functional:tb_AES_enc} -tclbatch {tb_AES_enc.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_AES_enc.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+The testbench passed!
+$finish called at time : 24 ns : File "C:/Users/Jianing/Desktop/9453HW2/lab2/AES_core/AES.srcs/sim_1/new/tb_AES_enc.v" Line 61
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_AES_enc_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 844.633 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
+<<<<<<< HEAD
 INFO: [Common 17-206] Exiting Vivado at Wed Feb 16 22:17:08 2022...
+=======
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 16 23:31:55 2022...
+>>>>>>> f7d7932c56a29084181cb6ac1cb6ad866a59736f

@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 `default_nettype none
 
-module AEC_enc(
+module AES_enc(
     input wire[127:0] plain_text,
     input wire[127:0] key, 
     input wire reset,
